@@ -17,6 +17,12 @@ http:
   # base_url: example.duckdns.org:8123
 
 frontend:
+panel_iframe:
+  router:
+    title: 'FIOS Router'
+    icon: 'mdi:router-wireless'
+    url: _REDACTED_
+
 conversation:
 logbook:
 history:
