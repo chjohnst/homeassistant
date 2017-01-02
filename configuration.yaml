@@ -1,0 +1,41 @@
+####################
+# Main 
+####################
+homeassistant:
+  name: Home
+  latitude: _REDACTED_
+  longitude: _REDACTED_
+  elevation: _REDACTED_
+  unit_system: imperial 
+  temperature_unit: F
+  time_zone: America/New_York
+
+http:
+  # Uncomment this to add a password (recommended!)
+  # api_password: PASSWORD
+  # Uncomment this if you are using SSL or running in Docker etc
+  # base_url: example.duckdns.org:8123
+
+frontend:
+conversation:
+logbook:
+history:
+updater:
+sun:
+
+####################
+# Components:
+####################
+nest:
+  client_id: _REDACTED_
+  client_secret: _REDACTED_
+
+sensor:
+  platform: forecast
+  api_key: _REDACTED_
+  monitored_conditions:
+    - summary
+    - precip_type
+    - precip_intensity
+    - precip_probability
+    - temperature
